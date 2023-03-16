@@ -1,7 +1,8 @@
 #include <stdio.h>
-/*
-*	Name: 4-puts.c
-*	Desc: hello world program using puts function.
+/**
+*	main - Entry Point
+*	Descrition: hello world program using puts function.
+*	Return: Always 0
 */
 int main(void)
 {
