@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S --std=gnu89 $CFILE
+gcc -S --ansi=c $CFILE
