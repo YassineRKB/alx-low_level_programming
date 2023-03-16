@@ -1,7 +1,7 @@
 #include <stdio.h>
 /*
-	Name: 4-puts.c
-	Desc: hello world program using puts function.
+*	Name: 4-puts.c
+*	Desc: hello world program using puts function.
 */
 int main()
 {
