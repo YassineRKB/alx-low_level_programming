@@ -6,6 +6,12 @@
 */
 int main(void)
 {
-	printf("0123456789");
+	int i;
+	char bas10 = "0123456789";
+
+	for (i = 0; i < 11; i++)
+	{
+		putchar(bas10[i]);
+	}
 	return (0);
 }
