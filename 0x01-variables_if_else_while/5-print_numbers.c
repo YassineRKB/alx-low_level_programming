@@ -1,4 +1,4 @@
-#include <std.io>
+#include <stdio.h>
 /**
 *	main - Entry Point
 *	Description: prints base 10 numbers
