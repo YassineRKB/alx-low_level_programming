@@ -13,6 +13,6 @@ int main(void)
 	{
 		putchar(bas10[i]);
 	}
-	printf("\n")
+	printf("\n");
 	return (0);
 }
