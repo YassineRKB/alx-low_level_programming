@@ -13,5 +13,6 @@ int main(void)
 	{
 		putchar(bas10[i]);
 	}
+	printf("\n")
 	return (0);
 }
