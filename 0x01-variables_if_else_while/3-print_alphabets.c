@@ -8,7 +8,7 @@ int main(void)
 {
 	int i;
 	char a[26] = "abcdefghijklmnopqrstuvwxyz";
-	char b[26] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+	char b[26] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 	for (i = 0; i < 26; i++)
 	{
