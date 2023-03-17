@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <time.h>
+#include <stdlib.h>
 /**
 *	main - Entry Point
 *	Description: assign random number to var n
