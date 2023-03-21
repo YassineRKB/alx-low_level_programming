@@ -3,7 +3,7 @@
 * print_last_digit - entry point to the code
 * Description: prints the last digit of a number n
 * @n: int number to be checked
-* Return: 0
+* Return: last digit
 **/
 int print_last_digit(int n)
 {
@@ -14,5 +14,5 @@ int print_last_digit(int n)
 		last *= -1;
 	}
 	_putchar(last + '0');
-	return (0);
+	return (last);
 }
