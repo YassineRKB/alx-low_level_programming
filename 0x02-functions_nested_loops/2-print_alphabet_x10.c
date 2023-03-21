@@ -1,5 +1,6 @@
 #include "main.h"
-/** print_alphabet_x10 - entrypoint.
+/**
+* print_alphabet_x10 - entrypoint.
 * Description: prints the alphabet 10 times
 */
 void print_alphabet_x10(void)
