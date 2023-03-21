@@ -1,6 +1,6 @@
 #include "main.h"
-/*
-*add - Entry Point to code
+/**
+* add - Entry Point to code, sum of a+b
 *Description: add numbers a and b
 *@a: first int num
 *@b: second int num
