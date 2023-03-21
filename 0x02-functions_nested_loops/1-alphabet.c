@@ -1,21 +1,18 @@
 #include "main.h"
 /**
-*	main - Entry Point
+*	print_alphabet - Entry Point
 *	Description: prints alphabets
 *	Return: 0
 */
-int main(void)
+int print_alphabet(void)
 {
 	char ar[26] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
 
-	print_alphabet()
+	for( i = 0; i <= 26; i++)
 	{
-		for( i = 0; i <= 26; i++)
-		{
-			_putchar(ar[i]);
-		}
-		_putchar('\n');
+		_putchar(ar[i]);
 	}
+	_putchar('\n');
 	return (0);
 }
