@@ -1,4 +1,4 @@
-#include "main"
+#include "main.h"
 /**
 * _isalpha - entry point to the check
 * Description: checks if char c is an alpha
