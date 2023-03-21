@@ -6,12 +6,6 @@
 */
 int main(void)
 {
-	char ar[9] = "_putchar\n";
-	int i;
-
-	for (i=0; i<9; i++)
-	{
-		_putchar(ar[i]);
-	}
+	print_putchar();
 	return (0);
 }
