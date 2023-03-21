@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* name times_table - Entry Point to the code
+* times_table - Entry Point to the code
 * description - prints the 9 time tables
 * Return: 9 time tables
 */
