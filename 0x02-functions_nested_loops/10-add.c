@@ -1,6 +1,6 @@
 #include "main.h"
 /*
-* add(int,int) - entry point to code
+* add: Entry Point to code
 * description: add numbers a and b
 * Return: the result of a+b
 **/
