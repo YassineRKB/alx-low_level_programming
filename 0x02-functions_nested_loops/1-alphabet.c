@@ -4,7 +4,7 @@
 *	Description: prints alphabets
 *	Return: 0
 */
-int print_alphabet(void)
+void print_alphabet(void)
 {
 	char ar[26] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
