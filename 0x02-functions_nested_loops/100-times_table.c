@@ -22,6 +22,7 @@ void print_times_table(int n)
 				if (r <= 9)
 				{
 					_putchar(' ');
+					_putchar(' ');
 					_putchar(r + '0');
 				}
 				else
