@@ -16,11 +16,11 @@ int main(void)
 		f = i + j;
 		if (n == 49)
 		{
-			print("%ld\n", f);
+			printf("%ld\n", f);
 		}
 		else
 		{
-			print("%ld, ", f);
+			printf("%ld, ", f);
 		}
 		i = j;
 		j = f;
