@@ -9,6 +9,7 @@ int main(void)
 	long j, r, s;
 	int i = 0;
 
+	j = 1, k = 2, s = 2;
 	while (r + j < 4000000)
 	{
 		r += j;
