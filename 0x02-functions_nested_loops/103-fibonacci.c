@@ -16,9 +16,9 @@ int main(void)
 		if (r % 2 == 0)
 		{
 			s += r;
-			j = r - j;
-			++i;
 		}
+		j = r - j;
+		++i;
 	}
 	printf("%ld\n", s);
 	return (0);
