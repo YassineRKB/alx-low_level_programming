@@ -13,9 +13,9 @@ int main(void)
 	{
 		if (i % 5 == 0 || i % 3 == 0)
 		{
-			r += i
+			r += i;
 		}
-		i += 1
+		i += 1;
 	}
 	printf("%d\n", r);
 	return (0);
