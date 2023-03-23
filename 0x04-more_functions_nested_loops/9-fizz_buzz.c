@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 /**
 * main - entry point to “Fizz-Buzz test” code.
 * Return: 0.
@@ -27,4 +28,5 @@ int main(void)
 		}
 	}
 	putchar('\n');
+	return (0);
 }
