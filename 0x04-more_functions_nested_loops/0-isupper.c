@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
 * _isupper - function that checks if variable is uppercase or not
 * @c: targeted int variable
