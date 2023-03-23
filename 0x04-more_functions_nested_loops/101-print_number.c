@@ -23,10 +23,14 @@ void print_number(int n)
 	}
 	else
 	{
-		n1 = n1 / 10;
-		_putchar(n2 / 10 + '0');
-
-		for (i = 1; i >= 1; i = i / 10)
+		while (n1 >= 10)
+		{
+			d = d * 10;
+			n1 = n1 / 10;
+		}
+		_putchar(n2 / d + '0');
+		d = d / 10;
+		for (i = d; i >= 1; i = i / 10)
 		{
 			_putchar(n2 / i % 10 + '0');
 		}
