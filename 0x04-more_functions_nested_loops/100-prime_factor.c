@@ -10,7 +10,7 @@ int main(void)
 	long prime = 0;
 	long div = 2;
 
-	while (number !1)
+	while (number != 1)
 	{
 		if (number % div == 0)
 		{
