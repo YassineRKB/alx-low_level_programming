@@ -28,6 +28,7 @@ void puts2(char *str)
 			k = 0;
 			continue;
 		}
+		i++;
 	}
 	_putchar('\n');
 }
