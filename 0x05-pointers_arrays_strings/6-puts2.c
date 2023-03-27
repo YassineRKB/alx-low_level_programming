@@ -16,9 +16,9 @@ void puts2(char *str)
 		{
 			_putchar(str[i]);
 			i++;
-			k++;
+			k = k + 1;
 		}
-		else if (k == 1)
+		else
 		{
 			k--;
 		}
