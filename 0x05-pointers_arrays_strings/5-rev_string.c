@@ -9,6 +9,7 @@ void rev_string(char *s)
 {
 	int len = 0;
 	int j = 0;
+	int change;
 
 	while (s[len] != '\0')
 	{
@@ -17,7 +18,10 @@ void rev_string(char *s)
 	len = len - 1;
 	while (len >= 0)
 	{
-		swap_int(s + len, s + j);
+
+		change = s[len];
+		s[len] = s[j];
+		s[j] = change;
 		len--;
 		j++;
 	}
