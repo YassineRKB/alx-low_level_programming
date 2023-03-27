@@ -9,8 +9,13 @@ void puts2(char *str)
 {
 	int k = 0;
 	int i = 0;
-	int len = _strlen(str) - 1;
+	int len;
 
+	while (str[len] != 0)
+	{
+		len++;
+	}
+	len = len - 1;
 	while (i < len)
 	{
 		if (k == 0)
