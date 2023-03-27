@@ -16,17 +16,16 @@ void puts2(char *str)
 		len++;
 	}
 	len = len - 1;
-	while (i < len)
+	while (i <= len)
 	{
 		if (k == 0)
 		{
 			_putchar(str[i]);
-			k = 1;
+			k++;
 		}
-		else
+		else if (k == 1)
 		{
-			k = 0;
-			continue;
+			k--;
 		}
 		i++;
 	}
