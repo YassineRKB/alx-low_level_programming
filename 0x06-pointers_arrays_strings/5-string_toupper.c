@@ -11,18 +11,13 @@ char *string_toupper(char *a)
 
 	while (a[len] != '\0')
 	{
-		len++;
-	}
-	char f[len];
-
-	for (int i = 0; i <= len; i++)
-	{
-		if (i >= 97 && i <= 122)
+		if (a[len] >= 97 && a[len] <= 122)
 		{
 			r = i - 32;
-			f[i] = r;
+			a[len] = r;
 		}
+		len++;
 	}
-	return (f);
+	return (a);
 }
 
