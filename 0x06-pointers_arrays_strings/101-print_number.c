@@ -11,22 +11,30 @@ void print_number(int n)
 	n1 = n;
 	if (n < 0)
 	{
-		putchar('-');
+		_putchar('-');
 		n1 = -n;
 	}
 	if (n1 < 10)
 	{
-		putchar((n % 10) + '0');
+		_putchar((n % 10) + '0');
 	}
 	else if (n1 >= 10 && n1 < 100)
 	{
-		putchar((n1 / 10) % 10 + '0');
-		putchar(n1 % 10 + '0');
+		_putchar((n1 / 10) % 10 + '0');
+		_putchar(n1 % 10 + '0');
 	}
-	else if (n1 >= 100)
+	else if (n1 >= 100 && n1 < 1000)
 	{
-		putchar((n1 / 10) / 10 + '0');
-		putchar((n1 / 10) % 10 + '0');
-		putchar(n1 % 10 + '0');
+		_putchar((n1 / 10) / 10 + '0');
+		_putchar((n1 / 10) % 10 + '0');
+		_putchar(n1 % 10 + '0');
 	}
+	else
+	{
+		_putchar(((n1 / 10) / 10) / 10 + '0');
+		_putchar((n1 / 10) % 10 + '0');
+		_putchar((n1 / 10) % 10 + '0');
+		_putchar(n1 % 10 + '0');
+	}
+
 }
