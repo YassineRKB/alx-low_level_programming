@@ -1,9 +1,11 @@
 # include "main.h"
+
 /**
 * leet - function that encodes a string into 1337.
 * @a: char
 * Return: char
 **/
+
 char *leet(char *a)
 {
 	int r[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
