@@ -18,7 +18,12 @@ char *cap_string(char *a);
 			}
 			len++;
 		}
-		if (a[len-1] <= 65 && a[len] >= 90 && a[len-1] <= 97 && a[len-1] >= 122)
+		if (a[len - 1] == '(' || a[len - 1] == '\t' || a[len - 1] == '\n'
+		|| a[len - 1] == ',' || a[len - 1] == ';' || a[len - 1] == '!'
+		|| a[len - 1] == '.' || a[len - 1] == '?' || a[len - 1] == '.'
+		|| a[len - 1] == '"' || a[len - 1] == ' ' || a[len - 1] == '}'
+		|| a[len - 1] == '{' || a[len - 1] == ')')
+
 		{
 			if (a[len] >= 97 && a[len] <= 122)
 			{
