@@ -6,6 +6,7 @@
 * @src: source string to be appended in @dest
 * Return: char
 **/
+
 char *_strcat(char *dest, char *src)
 {
 	int len = 0;
