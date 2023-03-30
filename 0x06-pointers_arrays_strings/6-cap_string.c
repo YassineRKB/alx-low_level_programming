@@ -10,12 +10,9 @@ char *cap_string(char *a);
 
 	while (a[len] != '\0')
 	{
-		if (len == 0)
+		if (a[0] >= 97 && a[0] <= 122)
 		{
-			if (a[len] >= 97 && a[len] <= 122)
-			{
-				a[len] = a[len] - 32;
-			}
+			a[0] = a[0] - 32;
 		}
 		if (a[len] == '(' || a[len] == '\t' || a[len] == '\n'
 		|| a[len] == ',' || a[len] == ';' || a[len] == '!'
