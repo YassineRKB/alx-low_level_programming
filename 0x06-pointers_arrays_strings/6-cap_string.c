@@ -16,13 +16,13 @@ char *cap_string(char *a);
 		{
 			len++;
 		}
-		if (a[len] == '(' || a[len] == '\t' || a[len] == '\n'
-		|| a[len] == ',' || a[len] == ';' || a[len] == '!'
-		|| a[len] == '.' || a[len] == '?' || a[len] == '.'
-		|| a[len] == '"' || a[len] == ' ' || a[len] == '}'
-		|| a[len] == '{' || a[len] == ')' || len == 0)
+		if (a[len - 1] == '(' || a[len - 1] == '\t' || a[len - 1] == '\n'
+		|| a[len - 1] == ',' || a[len - 1] == ';' || a[len - 1] == '!'
+		|| a[len - 1] == '.' || a[len - 1] == '?' || a[len - 1] == '.'
+		|| a[len - 1] == '"' || a[len - 1] == ' ' || a[len - 1] == '}'
+		|| a[len - 1] == '{' || a[len - 1] == ')' || len == 0)
 		{
-			a[len + 1] = a[len + 1] - 32;
+			a[len] = a[len] - 32;
 		}
 		len++;
 	}
