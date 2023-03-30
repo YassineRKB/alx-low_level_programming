@@ -21,9 +21,9 @@ char *cap_string(char *a);
 		|| a[len] == '{' || a[len] == ')')
 
 		{
-			if (a[len+1] >= 97 && a[len+1] <= 122)
+			if (a[len + 1] >= 97 && a[len + 1] <= 122)
 			{
-				a[len+1] = a[len+1] - 32;
+				a[len + 1] = a[len + 1] - 32;
 			}
 		}
 		len++;
