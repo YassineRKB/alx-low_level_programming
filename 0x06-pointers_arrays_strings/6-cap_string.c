@@ -20,7 +20,7 @@ char *cap_string(char *a);
 		|| a[len] == ',' || a[len] == ';' || a[len] == '!'
 		|| a[len] == '.' || a[len] == '?' || a[len] == '.'
 		|| a[len] == '"' || a[len] == ' ' || a[len] == '}'
-		|| a[len] == '{' || a[len] == ')')
+		|| a[len] == '{' || a[len] == ')' || len == 0)
 		{
 			a[len + 1] = a[len + 1] - 32;
 		}
