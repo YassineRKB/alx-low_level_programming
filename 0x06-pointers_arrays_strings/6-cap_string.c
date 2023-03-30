@@ -23,7 +23,7 @@ char *cap_string(char *a)
 		{
 			if (a[i] == sep[j])
 			{
-				x = 12;
+				j = 12;
 			}
 		}
 	}
