@@ -1,6 +1,6 @@
 # include "main.h"
 /**
-* string_toupper - function that capitalizes all words of a string.
+* cap_string - function that capitalizes all words of a string.
 * @a: array
 * Return: char
 **/
