@@ -16,7 +16,6 @@ char *cap_string(char *a);
 			{
 				a[len] = a[len] - 32;
 			}
-			len++;
 		}
 		if (a[len - 1] == '(' || a[len - 1] == '\t' || a[len - 1] == '\n'
 		|| a[len - 1] == ',' || a[len - 1] == ';' || a[len - 1] == '!'
@@ -29,8 +28,8 @@ char *cap_string(char *a);
 			{
 				a[len] = a[len] - 32;
 			}
-			len++;
 		}
+		len++;
 	}
 	return (a);
 }
