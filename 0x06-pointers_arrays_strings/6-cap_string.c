@@ -16,14 +16,12 @@ char *cap_string(char *a)
 	{
 		if (a[i] >= 'a' && a[i] <= 'z')
 		{
-			a[i] = a[i] - 32;
-		}
-
-		for (j = 0; j <= 12; j++)
-		{
-			if (a[i] == sep[j])
+			for (j = 0; j <= 12; j++)
 			{
-				j = 12;
+				if (a[i - 1] == sep[j])
+				{
+					a[i] = a[i] - 32;
+				}
 			}
 		}
 	}
