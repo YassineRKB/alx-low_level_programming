@@ -12,12 +12,19 @@ char *cap_string(char *a);
 	{
 		if (a[len] == 0)
 		{
-			string_toupper(a[len]);
+			if (a[len] >= 97 && a[len] <= 122)
+			{
+				a[len] = a[len] - 32;
+			}
 			len++;
 		}
 		if (a[len - 1] == ' ')
 		{
-			string_toupper(a[len]);
+			if (a[len] >= 97 && a[len] <= 122)
+			{
+				a[len] = a[len] - 32;
+			}
+			len++;
 		}
 	}
 	return (a);
