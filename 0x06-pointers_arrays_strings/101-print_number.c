@@ -1,40 +1,38 @@
-# include "main.h"
+#include "main.h"
 /**
-* print_number - function that prints an integer.
-* @n: int value
-* Return: void
-**/
+* print_number - function that prints an int
+* @n: int target value
+* Return: nothing.
+*/
 void print_number(int n)
 {
-	int n1;
+	unsigned int n1, n2;
+	int i, d;
 
-	n1 = n;
+	d = 1;
 	if (n < 0)
 	{
+		n *= -1;
 		_putchar('-');
-		n1 = -n;
 	}
-	if (n1 < 10)
+	n1 = n;
+	n2 = n;
+	if (n1 < 9)
 	{
-		_putchar((n % 10) + '0');
-	}
-	else if (n1 >= 10 && n1 < 100)
-	{
-		_putchar((n1 / 10) % 10 + '0');
-		_putchar(n1 % 10 + '0');
-	}
-	else if (n1 >= 100 && n1 < 1000)
-	{
-		_putchar((n1 / 10) / 10 + '0');
-		_putchar((n1 / 10) % 10 + '0');
-		_putchar(n1 % 10 + '0');
+		_putchar(n1 + '0');
 	}
 	else
 	{
-		_putchar(((n1 / 10) / 10) / 10 + '0');
-		_putchar((n1 / 10) % 10 + '0');
-		_putchar((n1 / 10) % 10 + '0');
-		_putchar(n1 % 10 + '0');
+		while (n1 >= 10)
+		{
+			d = d * 10;
+			n1 = n1 / 10;
+		}
+		_putchar(n2 / d + '0');
+		d = d / 10;
+		for (i = d; i >= 1; i = i / 10)
+		{
+			_putchar(n2 / i % 10 + '0');
+		}
 	}
-
 }
