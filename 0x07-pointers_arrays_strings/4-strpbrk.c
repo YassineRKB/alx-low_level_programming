@@ -7,13 +7,17 @@
 **/
 char *_strpbrk(char *s, char *accept)
 {
-	int i;
+	unsigned int i;
+	unsigned int j = 0;
 
-	for (i = 0; s[i] >= '\0'; i++)
+	for (j = 0; s[j] != '\0'; j++)
 	{
-		if (s[i] == accept[i])
+		for (i = 0; accept[i] != '\0'; i++)
 		{
-			return (s + i);
+			if (s[i] == accept[i])
+			{
+				return ((s + i - 1));
+			}
 		}
 	}
 	return ('\0');
