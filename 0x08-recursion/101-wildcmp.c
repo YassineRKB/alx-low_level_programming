@@ -7,6 +7,7 @@
 * @s2: 2nd string.
 * Return: 1 if identical or 0 if not
 **/
+
 int wildcmp(char *s1, char *s2)
 {
 	if (*s1 == '\0' && *s2 == '\0')
