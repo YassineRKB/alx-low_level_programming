@@ -8,16 +8,16 @@
 
 int _sqrt_recursion(int n)
 {
-	return (sqr(n, 1));
+	return (_sqr(n, 1));
 }
 
 /**
-* sqr - square root function
+* _sqr - square root function
 * @s: number to calculate square root for
 * @w: number
 * Return: int natural square root
 **/
-int sqr(int s, int w)
+int _sqr(int s, int w)
 {
 	if (w < 0)
 	{
