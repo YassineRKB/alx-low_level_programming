@@ -23,13 +23,13 @@ int _sqrt(int s, int w)
 	{
 		return (-1);
 	}
-	if (w * w > s)
+	if ((w * w) > s)
 	{
 		return (-1);
 	}
-	if (w * w == s)
+	if ((w * w) == s)
 	{
-		return (_sqrt(s, w++));
+		return (w);
 	}
+	return (_sqrt(s, w++));
 }
-
