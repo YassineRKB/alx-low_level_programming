@@ -8,7 +8,7 @@
 
 int _sqrt_recursion(int n)
 {
-	return (_sqrt(n, 0));
+	return (_sqrt(n, 1));
 }
 
 /**
@@ -19,13 +19,13 @@ int _sqrt_recursion(int n)
 **/
 int _sqrt(int s, int w)
 {
-	if ((w * w) > s)
+	if (w * w > s)
 	{
 		return (-1);
 	}
-	if ((w * w) == s)
+	if (w * w == s)
 	{
 		return (w);
 	}
-	return (_sqrt(s, w++));
+	return (_sqrt(s, w + 1));
 }
