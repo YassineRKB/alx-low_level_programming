@@ -4,10 +4,12 @@
 * @n: number to be checked
 * Return: 1 if prime, or 0 if not
 **/
+
 int is_prime_number(int n)
 {
 	return (prim(n, 2));
 }
+
 /**
 * prim - recursive function to check prime number
 * @x: passed n number
