@@ -24,9 +24,9 @@ int check(char *s, int l)
 	{
 		return (1);
 	}
-	if (*s == *(s + 1))
+	if (*s == *(s + l))
 	{
-		return (check(s + 1, l - 1));
+		return (check(s + 1, l - 2));
 	}
 	return (0);
 }
