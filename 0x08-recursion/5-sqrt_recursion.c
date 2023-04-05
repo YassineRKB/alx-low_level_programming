@@ -12,17 +12,13 @@ int _sqrt_recursion(int n)
 }
 
 /**
-* _sqr - square root function
+* _sqrt - square root function
 * @s: number to calculate square root for
 * @w: number
 * Return: int natural square root
 **/
 int _sqrt(int s, int w)
 {
-	if (w < 0)
-	{
-		return (-1);
-	}
 	if ((w * w) > s)
 	{
 		return (-1);
