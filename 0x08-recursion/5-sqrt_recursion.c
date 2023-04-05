@@ -29,7 +29,7 @@ int _sqr(int s, int w)
 	}
 	if (w * w == s)
 	{
-		return (sqr(s, w++));
+		return (_sqr(s, w++));
 	}
 }
 
