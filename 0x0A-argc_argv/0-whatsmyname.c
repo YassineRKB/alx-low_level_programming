@@ -3,9 +3,10 @@
 * main - entry point to code
 * @argc: number of arguments
 * @argv: value of arguments
-* Return: nothing void.
+* Return: 0.
 **/
-void main(int argc, char **argv)
+int main(int argc, char **argv)
 {
 	printf("%s\n", argv[0]);
+	return (0);
 }
