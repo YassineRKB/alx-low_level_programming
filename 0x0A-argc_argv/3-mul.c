@@ -9,18 +9,20 @@
 int main(int argc, char **argv)
 {
 	int a = argc - 1;
+	int r;
+	int i;
+	int n;
 
+	r = 1;
 	if (a <= 0)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	int r, i, n;
 
-	r = 1;
 	for (i = 1; i <= a; i++)
 	{
-		n =  atoi(argv[i]);
+		n =  _atoi(argv[i]);
 		r *= n;
 	}
 	printf("%d\n", r);
