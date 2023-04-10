@@ -15,7 +15,6 @@ int main(int argc, char **argv)
 	int i;
 	int j;
 	int n;
-	char c;
 
 	r = 0;
 	if (a == 0)
@@ -26,9 +25,6 @@ int main(int argc, char **argv)
 
 	for (i = 1; i <= a; i++)
 	{
-
-		c = *argv[i];
-		(void) c;
 		j = 0;
 		while (argv[i][j] != '\0')
 		{
