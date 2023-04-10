@@ -14,11 +14,6 @@ int main(int argc, char **argv)
 	int n;
 
 	r = 0;
-	if (a < 1)
-	{
-		printf("Error\n");
-		return (1);
-	}
 	if (a == 0)
 	{
 		printf("0\n");
@@ -28,7 +23,7 @@ int main(int argc, char **argv)
 	for (i = 1; i <= a; i++)
 	{
 		n =  _atoi(argv[i]);
-		if (!_isdigit(n))
+		if (_isdigit(n))
 		{
 			printf("Error\n");
 			return (0);
