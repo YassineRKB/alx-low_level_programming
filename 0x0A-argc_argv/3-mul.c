@@ -14,7 +14,7 @@ int main(int argc, char **argv)
 	int n;
 
 	r = 1;
-	if (a <= 0 || a > 2)
+	if (a < 2 || a > 2)
 	{
 		printf("Error\n");
 		return (1);
