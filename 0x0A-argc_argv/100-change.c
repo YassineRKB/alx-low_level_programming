@@ -1,4 +1,5 @@
 # include <stdio.h>
+# include <stdlib.h>
 /**
 * main - entry to code
 * @argc: number of arguments
@@ -10,7 +11,7 @@ int main(int argc, char **argv)
 {
 	int a = argc - 1;
 	int i, j, r;
-	int c[] = {25, 10, 5, 2, 1}
+	int c[] = {25, 10, 5, 2, 1};
 
 	r = 0;
 	j = 0;
@@ -19,7 +20,7 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		return (1);
 	}
-	j = atoi(argv[1])
+	j = atoi(argv[1]);
 
 	if (j < 0)
 	{
