@@ -7,11 +7,10 @@
 * @s2: 2nd string
 * Return: pointer, null on fail
 **/
-
 char *str_concat(char *s1, char *s2)
 {
 	char *p;
-	int i, j;
+	int i, j = 0, len = 0;
 
 	if (s1 == NULL)
 	{
@@ -21,14 +20,22 @@ char *str_concat(char *s1, char *s2)
 	{
 		s2 = "";
 	}
+	while (s1[len])
+	{
+		len++;
+	}
+	while (s2[j])
+	{
+		j++;
 
-	p = malloc(sizeof(s1) + sizeof(s2) + sizeof(char));
-
+	}
+	p = malloc(sizeof(char) * (len + j));
 	if (p == NULL)
 	{
 		return (NULL);
 	}
 	i = 0;
+	j = 0;
 	while (s1[i] != '\0')
 	{
 		p[j++] = s1[i];
@@ -40,6 +47,5 @@ char *str_concat(char *s1, char *s2)
 		p[j++] = s2[i];
 		i++;
 	}
-
 	return (p);
 }
