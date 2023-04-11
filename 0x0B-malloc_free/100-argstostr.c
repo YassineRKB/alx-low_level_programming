@@ -22,7 +22,7 @@ char *argstostr(int ac, char **av)
 
 	for (i = 0; i <= ac; i++)
 	{
-		p[i] = av[i] + '\n';
+		p[i] = *av[i] + '\n';
 	}
 	return (p);
 }
