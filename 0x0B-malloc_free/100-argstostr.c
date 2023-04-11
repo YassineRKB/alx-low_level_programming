@@ -16,7 +16,7 @@ char *argstostr(int ac, char **av)
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
-	p = (int *) malloc(sizeof(char) * ac);
+	p = (char *) malloc(sizeof(char) * ac);
 	if (p == NULL)
 		return (NULL);
 
