@@ -25,7 +25,7 @@ char **strtow(char *str)
 	{
 		if (str[i] != ' ')
 		{
-			p[i] = str[i] + '\0';
+			p[i] = str[i];
 		}
 	}
 }
