@@ -9,7 +9,7 @@
 **/
 int main(int argc, char **argv)
 {
-	long int r, n1, n2;
+	int r, n1, n2;
 	char *s1, *s2;
 
 	if (argc != 3)
@@ -25,6 +25,6 @@ int main(int argc, char **argv)
 		return (98);
 	}
 	r = n1 * n2;
-	printf("%ld\n", r);
+	printf("%d\n", r);
 	return (0);
 }
