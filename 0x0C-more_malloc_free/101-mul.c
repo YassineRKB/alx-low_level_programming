@@ -1,14 +1,12 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
-
 /**
 * main - a program that multiplies two positive numbers.
 * @argc: arguments count.
 * @argv: arguments value.
 * Return: int result, 1 if error.
 **/
-
 int main(int argc, char **argv)
 {
 	long int r, n1, n2;
