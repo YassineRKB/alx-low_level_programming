@@ -12,7 +12,7 @@ int main(int argc, int **argv)
 
 	if (argc != 3)
 		printf("Error");
-		return (1);
+		return (98);
 	if (!isdigit(argv[1]) || !isdigit(argv[2]))
 		printf("Error");
 	n1 = argv[1];
