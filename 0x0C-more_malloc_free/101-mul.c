@@ -1,6 +1,7 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
+# include "main.h"
 /**
 * main - a program that multiplies two positive numbers.
 * @argc: arguments count.
@@ -9,7 +10,7 @@
 **/
 int main(int argc, char **argv)
 {
-	int r, n1, n2;
+	unsigned long int r, n1, n2;
 	char *s1, *s2;
 
 	if (argc != 3)
@@ -24,12 +25,7 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		return (98);
 	}
-	if (n1 < 0 || n2 < 0)
-	{
-		printf("Error\n");
-		return (98);
-	}
 	r = n1 * n2;
-	printf("%d\n", r);
-	return (0);
+	printf("%ld\n", r);
+	return (r);
 }
