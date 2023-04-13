@@ -2,7 +2,7 @@
 # include <stdlib.h>
 
 /**
-* string_concat - function that concatenates two strings.
+* string_nconcat - function that concatenates two strings.
 * @s1: 1st string.
 * @s2: 2nd string.
 * @n: n bytes copy from s2 if n < lenght(s2)
