@@ -11,15 +11,20 @@
 int main(int argc, char **argv)
 {
 	int r, n1, n2;
+	char *s1, *s2;
 
 	if (argc != 3)
 	{
 		printf("Error\n");
 		return (98);
 	}
-	n1 = atoi(argv[1]);
-	n2 = atoi(argv[2]);
-
+	n1 = atoi(argv[1], &s1, 10);
+	n2 = atoi(argv[2], &s2, 10);
+	if (strcmp(s1, "") != 0 ||  strcmp(s2, "") != 0)
+	{
+		printf("Error\n");
+		return (98);
+	}
 	r = n1 * n2;
 	printf("%d\n", r);
 	return (r);
