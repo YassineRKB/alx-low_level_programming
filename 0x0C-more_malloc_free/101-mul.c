@@ -1,4 +1,5 @@
 # include <stdio.h>
+# include <stdlib.h>
 
 /**
 * main - a program that multiplies two positive numbers.
@@ -6,17 +7,20 @@
 * @argv: arguments value.
 * Return: int result, 1 if error.
 **/
-int main(int argc, int **argv)
+
+int main(int argc, char **argv)
 {
-	unsigned int r, n1, n2;
+	long int r, n1, n2;
 
 	if (argc != 3)
+	{
 		printf("Error");
 		return (98);
-	if (!isdigit(argv[1]) || !isdigit(argv[2]))
-		printf("Error");
-	n1 = argv[1];
-	n2 = argv[2];
+	}
+	n1 = strtol(argv[1], NULL, 10);
+	n2 = strtol(argv[2], NULL, 10);
+	printf("%ld\n%ld\n", n1, n2);
 	r = n1 * n2;
-	return (r);
+	printf("%ld\n", r);
+	return (0);
 }
