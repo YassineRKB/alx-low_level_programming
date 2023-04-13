@@ -24,6 +24,11 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		return (98);
 	}
+	if (n1 < 0 || n2 < 0)
+	{
+		printf("Error\n");
+		return (98);
+	}
 	r = n1 * n2;
 	printf("%d\n", r);
 	return (0);
