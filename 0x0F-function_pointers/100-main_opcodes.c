@@ -9,7 +9,7 @@
 **/
 int main(int argc, char **argv)
 {
-	int i, n;
+	int n, i = 0;
 	char *p = (char *) main;
 
 	if (argc != 2)
@@ -25,5 +25,10 @@ int main(int argc, char **argv)
 		exit(2);
 	}
 
+	while (i < n)
+	{
+		printf("%04x", p[i]);
+		i++;
+	}
 	return (0);
 }
