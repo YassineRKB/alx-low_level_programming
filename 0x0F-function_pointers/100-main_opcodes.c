@@ -1,12 +1,14 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
+
 /**
 * main - entry point
 * @argc: arguments counter
 * @argv: arguments value
 * Return: 0
 **/
+
 int main(int argc, char **argv)
 {
 	int n, i = 0;
