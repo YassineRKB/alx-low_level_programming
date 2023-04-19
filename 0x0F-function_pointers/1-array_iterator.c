@@ -1,5 +1,5 @@
+# include <stddef.h>
 # include "function_pointers.h"
-# include <stdio.h>
 
 /**
 * array_iterator - function that invokes a function passed as parameter
