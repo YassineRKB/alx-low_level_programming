@@ -27,7 +27,7 @@ int main(int argc, char **argv)
 
 	while (i < n)
 	{
-		if (i+1 == n)
+		if (i + 1 == n)
 		{
 			printf("%02hhx\n", p[i]);
 			break;
