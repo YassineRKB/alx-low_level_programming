@@ -26,7 +26,7 @@ int main(int argc, char **argv)
 	n2 = atoi(argv[3]);
 	oper = argv[2];
 	/* get the function and check for error */
-	if (get_op_func(oper) == NULL || oper[1] == '\0')
+	if (get_op_func(oper) == NULL || oper[1] != '\0')
 	{
 		printf("Error\n");
 		exit(99);
