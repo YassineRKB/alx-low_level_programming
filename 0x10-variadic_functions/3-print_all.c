@@ -13,6 +13,7 @@ void print_all(const char * const format, ...)
 	va_list argh;
 	unsigned int i, j;
 	char ar[] = "cifs";
+	char *string;
 
 	va_start(argh, format);
 	i = 0;
@@ -36,9 +37,10 @@ void print_all(const char * const format, ...)
 				printf("%f", va_arg(argh, double));
 				break;
 			case 's':
-				if (va_arg(argh, char *))
+				string = va_arg(argh, char *);
+				if (string)
 				{
-					printf("%s", va_arg(argh, char *));
+					printf("%s", string);
 					break;
 				}
 				printf("(nil)");
