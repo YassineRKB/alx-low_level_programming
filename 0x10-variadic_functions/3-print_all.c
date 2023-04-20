@@ -21,7 +21,7 @@ void print_all(const char * const format, ...)
 		j = 0;
 		while (ar[j] && i == 0)
 		{
-			printf("%s", va_arg(argh, char *));
+			printf(", ");
 			j++;
 		}
 		switch (format[i])
