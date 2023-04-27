@@ -7,6 +7,7 @@
 * @h: struct list
 * Return: number of nodes, NULL if str is null
 ****/
+
 size_t print_list(const list_t *h)
 {
 	size_t n = 1;
@@ -23,5 +24,6 @@ size_t print_list(const list_t *h)
 		else
 			printf("[0] (nil)\n");
 	}
+	printf("[%d] %s\n", h->len, h->str);
 	return (n);
 }
