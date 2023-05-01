@@ -13,7 +13,7 @@ size_t print_listint_safe(const listint_t *head)
 	size_t n = 0, idx = 0;
 
 	if (head == NULL)
-		exit(98);
+		return (0);
 	n = loop_list(head);
 	if (n != 0)
 	{
