@@ -9,7 +9,7 @@
 size_t print_listint_safe(const listint_t *head)
 {
 	const listint_t *node, *h = head;
-	int i, n = 0;
+	size_t i, n = 0;
 
 	for (; h != NULL; n++)
 	{
