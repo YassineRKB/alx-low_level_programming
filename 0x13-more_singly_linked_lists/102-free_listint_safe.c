@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "lists.h"
+size_t loop_list(listint_t *head);
 /**
 * free_listint_safe - function to safely free linked list
 * @h: head node of linked list. when list is freed, head should NULL.
@@ -8,16 +9,22 @@
 **/
 size_t free_listint_safe(listint_t **h)
 {
-	listint_t *node, *temp = *h;
-	size_t n = 0;
+	listint_t *node = *h, *temp;
+	size_t n = 0, l = 0;
 
-	if (temp == NULL)
+	if (h == NULL || node == NULL)
 		return (0);
-	while ((node = temp))
+
+	l = loop_list(node);
+	while (node)
 	{
-		temp = temp->next;
-		free(node);
+		if (l <= 0)
+			break;
+		temp = node;
+		node = node->next;
+		free(temp);
 		n++;
+		l--;
 	}
 	*h = NULL;
 	return (n);
