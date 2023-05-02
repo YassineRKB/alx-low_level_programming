@@ -12,7 +12,7 @@ size_t free_listint_safe(listint_t **h)
 	listint_t *node = *h, *temp;
 	size_t n = 0, l = 0;
 
-	if (h == NULL || *h == NULL)
+	if (h == NULL || node == NULL)
 		return (0);
 
 	l = loop_list(node);
@@ -21,6 +21,7 @@ size_t free_listint_safe(listint_t **h)
 		if (l == 0)
 		{
 			node->next = NULL;
+			free(temp);
 			break;
 		}
 		node = node->next;
