@@ -9,24 +9,27 @@ size_t loop_list(listint_t *head);
 **/
 size_t free_listint_safe(listint_t **h)
 {
-	listint_t *node = *h, *temp;
+	listint_t *temp;
 	size_t n = 0, l = 0;
 
-	if (h == NULL || node == NULL)
+	if (h == NULL || *h == NULL)
 		return (0);
 
-	l = loop_list(node);
-	while ((temp = node))
+	l = loop_list(*h);
+	while (*h != NULL)
 	{
 		if (l == 0)
 		{
-			node->next = NULL;
-			free(temp);
+			(*h)->next = NULL;
 			break;
 		}
-		node = node->next;
+		(*h) = (*h)->next;
 		l--;
 		n++;
+	}
+	while ((temp = (*h)))
+	{
+		(*h) = (*h)->next;
 		free(temp);
 	}
 	*h = NULL;
