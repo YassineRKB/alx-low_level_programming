@@ -28,6 +28,7 @@ size_t free_listint_safe(listint_t **h)
 		n++;
 		l--;
 	}
+	free(node);
 	*h = NULL;
 	return (n);
 }
