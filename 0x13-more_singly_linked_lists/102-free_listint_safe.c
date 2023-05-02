@@ -19,19 +19,13 @@ size_t free_listint_safe(listint_t **h)
 	l = loop_list(node);
 	while ((temp = node))
 	{
-		if (l - 1 <= 0)
+		if (l <= 0)
 		{
 			node->next = NULL;
-			node = *h, temp = *h;
-			while ((node = temp))
-			{
-				temp = temp->next;
-				free(node);
-			}
-			*h = NULL;
-			return (n);
+			break;
 		}
 		node = node->next;
+		free(temp);
 		n++;
 		l--;
 	}
