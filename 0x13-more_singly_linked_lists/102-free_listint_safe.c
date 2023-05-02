@@ -10,25 +10,31 @@ void _free(listint_t *head);
 **/
 size_t free_listint_safe(listint_t **h)
 {
-	listint_t *node = *h;
+	listint_t *node = *h, *temp;
 	size_t n = 0, l = 0;
 
 	if (h == NULL || node == NULL)
 		return (0);
 
 	l = loop_list(node);
-	while (node)
+	while ((temp = node))
 	{
-		if (l <= 0)
+		if (l - 1 <= 0)
 		{
 			node->next = NULL;
-			break;
+			node = *h, temp = *h;
+			while ((node = temp))
+			{
+				temp = temp->next;
+				free(node);
+			}
+			*h = NULL;
+			return (n);
 		}
 		node = node->next;
 		n++;
 		l--;
 	}
-	_free(node);
 	*h = NULL;
 	return (n);
 }
