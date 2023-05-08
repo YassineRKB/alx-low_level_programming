@@ -27,7 +27,7 @@ int main(int argc, char **argv)
 	if (fileDesc_from == -1)
 		dprintf(STDERR_FILENO, CP_ERR_READ, argv[1]), exit(98);
 
-	fileDesc_to = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 0644);
+	fileDesc_to = open(argv[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
 	if (fileDesc_to == -1)
 		dprintf(STDERR_FILENO, CP_ERR_WRITE, argv[2]), exit(99);
 
