@@ -240,7 +240,10 @@ void getEntry(unsigned long int entry, unsigned char *ident)
 {
 	printf("  Entry point address:               ");
 	if (ident[EI_DATA] == ELFDATA2MSB)
+	{
 		entry = ((entry << 8) & 0xFF00FF00) | ((entry >> 8) & 0xFF00FF);
+		entry = (entry << 16 | entry >> 16);
+	}
 	if (ident[EI_CLASS] == ELFCLASS32)
 		printf("%#x\n", (unsigned int) entry);
 	else
