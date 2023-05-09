@@ -150,7 +150,7 @@ void getData(unsigned char *data)
 	else if (data[EI_DATA] == ELFDATA2MSB)
 		printf("2's complement, big endian\n");
 	else
-		printf("<unknown: %x>\n", data[EI_DATA]);
+		printf("<unknown: %x>\n", data[EI_CLASS]);
 }
 /**
 * getVersion - gets elf version
