@@ -6,16 +6,16 @@
 */
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	hash_table_t *nHolyHashTable;
+	hash_table_t *HolyHash;
 
-	nHolyHashTable = malloc(sizeof(hash_table_t));
-	if (!nHolyHashTable)
+	HolyHash = malloc(sizeof(hash_table_t));
+	if (!HolyHash)
 		return (NULL);
-	nHolyHashTable->size = size;
-	nHolyHashTable->array = malloc(
-		sizeof(hash_node_t *) * size
-	);
-	if (!nHolyHashTable->array)
+
+	HolyHash->size = size;
+	HolyHash->array = malloc(sizeof(hash_node_t *) * size);
+	if (!HolyHash->array)
 		return (NULL);
-	return (nHolyHashTable);
+	else
+		return (HolyHash);
 }
