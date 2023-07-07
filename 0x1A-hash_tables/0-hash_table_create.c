@@ -8,8 +8,6 @@ hash_table_t *hash_table_create(unsigned long int size)
 {
 	hash_table_t *nHolyHashTable;
 
-	if (!size)
-		return (NULL);
 	nHolyHashTable = malloc(sizeof(hash_table_t));
 	if (!nHolyHashTable)
 		return (NULL);
