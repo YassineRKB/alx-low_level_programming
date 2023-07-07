@@ -7,6 +7,7 @@
 hash_table_t *hash_table_create(unsigned long int size)
 {
 	hash_table_t *HolyHash;
+	unsigned long int id = 0;
 
 	HolyHash = malloc(sizeof(hash_table_t));
 	if (!HolyHash)
@@ -16,6 +17,10 @@ hash_table_t *hash_table_create(unsigned long int size)
 	HolyHash->array = malloc(sizeof(hash_node_t *) * size);
 	if (!HolyHash->array)
 		return (NULL);
-	else
-		return (HolyHash);
+	while (id < size)
+	{
+		HolyHash->array[id] = NULL;
+		id++;
+	}
+	return (HolyHash);
 }
