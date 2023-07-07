@@ -19,6 +19,5 @@ hash_table_t *hash_table_create(unsigned long int size)
 	);
 	if (!nHolyHashTable->array)
 		return (NULL);
-	else
-		return (nHolyHashTable);
+	return (nHolyHashTable);
 }
