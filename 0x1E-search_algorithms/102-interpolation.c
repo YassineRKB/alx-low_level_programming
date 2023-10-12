@@ -10,7 +10,7 @@ int interpolation_search(int *array, size_t size, int value)
 {
 	size_t left = 0, right = size - 1, index;
 
-	if (array == NULL)
+	if (!array)
 		return (-1);
 	index = left + (((double)(right - left) / (array[right] - array[left]))
 		   * (value - array[left]));
